@@ -1,98 +1,22 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('content')
+<div class="container">
+	<h1>Teste</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a blandit felis, non ultrices turpis. Morbi commodo maximus lectus interdum auctor. Quisque eget ipsum ipsum. Maecenas pellentesque interdum dui, vel volutpat metus venenatis nec. Etiam orci neque, sagittis non leo sit amet, pulvinar eleifend erat. Nam in tempor dui. Quisque nec risus sed lectus interdum feugiat sit amet nec ex.
+	</p>
+	<p>
+		Fusce nulla leo, tempus a facilisis nec, dignissim ac ex. Sed tempus rutrum mauris et viverra. Ut eleifend tristique dui eget consequat. Nulla nec metus et sapien mattis facilisis. Vestibulum quis nibh ultrices, lobortis augue a, imperdiet metus. Integer ornare, ligula eget tincidunt pellentesque, augue felis interdum leo, congue convallis magna ex vitae nibh. Vestibulum tincidunt pretium libero sit amet auctor.
+	</p>
+	<p>
+		Curabitur at dolor nisl. Vivamus ac luctus erat. Morbi a nisl tortor. Aliquam cursus rutrum ante. Sed tempus metus nisl, non posuere quam tempor nec. Vivamus facilisis neque in semper eleifend. Etiam convallis velit nec lacus hendrerit, eu pulvinar felis feugiat. Etiam diam velit, viverra sed tristique a, porttitor id purus. Phasellus ullamcorper vel lorem id tincidunt. Nulla cursus sapien sit amet ipsum facilisis, laoreet pretium enim eleifend.
+	</p>
+	<p>
+		Vivamus et mattis dolor. Mauris quis risus vitae enim porttitor convallis quis vitae sem. Mauris turpis felis, consectetur mollis diam vel, pellentesque accumsan nulla. Phasellus mauris purus, aliquam quis ante vel, lobortis consectetur nulla. Sed non erat aliquet, hendrerit nulla ut, blandit massa. Donec dolor tellus, semper at ex vel, vulputate viverra lectus. Nullam tortor libero, hendrerit sed quam eget, pretium dictum arcu. Phasellus eu cursus sem. Quisque condimentum ut odio nec ultrices. Vestibulum tristique justo tincidunt mi malesuada, sed sollicitudin leo condimentum. Ut nibh mauris, facilisis nec faucibus at, cursus id dui. Nam dolor mi, imperdiet quis pellentesque eget, feugiat at tortor. Fusce suscipit consequat magna, eu interdum elit posuere ut.
+	</p>
+	<p>
+		Proin venenatis urna a blandit commodo. Curabitur faucibus ultricies magna ac gravida. Phasellus mattis feugiat lorem. Integer laoreet enim velit, at bibendum justo suscipit in. Vestibulum tempus ligula sem, et eleifend nisl dignissim commodo. Suspendisse posuere tellus nec dui cursus, id scelerisque odio cursus. Donec ante purus, imperdiet a risus quis, hendrerit porta purus.
+	</p>
+</div>
+@endsection
