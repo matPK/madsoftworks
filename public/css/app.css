@@ -10472,9 +10472,22 @@ html {
 }
 
 body {
-  color: #333;
+  color: #DDD;
   min-width: 340px;
   margin-bottom: 60px;
+  height: 100%;
+  width: 100%;
+  background: url("/img/hipster-office-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body:before {
+  position: absolute;
+  content: "";
+  background-color: rgba(30, 30, 30, 0.75);
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -10483,6 +10496,26 @@ body {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background-color: #666666;
+  background-color: #454545;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.nav-link {
+  color: #8ec55f !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.home-image {
+  max-width: 300px;
+  margin: auto;
+}
+
+.home-image img {
+  max-width: 100%;
+  border-radius: 25%;
 }
 

@@ -16,6 +16,12 @@
 
         <!-- Right Side Of Navbar -->
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link nav-link-light">SOBRE</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link nav-link-light">CONTATO</a>
+            </li>
             <!-- Authentication Links -->
             {{--
             @guest
