@@ -1,42 +1,25 @@
-<nav class="navbar navbar-expand-md navbar-light">
-    <!-- Right Side Of Navbar -->
+<nav class="navbar navbar-expand">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a href="#" class="nav-link nav-link-light">SOBRE</a>
+            <a href="{{ route('home') }}" class="_nav-link{{ (Request::is('/') ? ' active' : '') }}">{{ __('navbar.home') }}</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link nav-link-light">CONTATO</a>
+            <a href="{{ route('about') }}" class="_nav-link{{ (Request::is('about*') ? ' active' : '') }}">{{ __('navbar.about') }}</a>
         </li>
-        <!-- Authentication Links -->
-        {{--
-        @guest
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Entrar') }}</a>
-            </li>
-            <li class="nav-item">
-                @if (Route::has('register'))
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a>
-                @endif
-            </li>
-        @else
-            <li class="nav-item dropdown">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }} <span class="caret"></span>
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                </div>
-            </li>
-        @endguest
-        --}}
+        <li class="nav-item">
+            <a href="{{ route('contact') }}" class="_nav-link{{ (Request::is('contact*') ? ' active' : '') }}">{{ __('navbar.contact') }}</a>
+        </li>
     </ul>
 </nav>
+
+<script>
+    $(document).ready(function(){
+
+        const links = $('._nav-link');
+
+        links.click(function(){
+            links.removeClass('active');
+        });
+
+    });
+</script>
