@@ -1,4 +1,4 @@
-.home-image {
+#home-logo {
 	max-width: 300px;
 	margin: auto;
 	img {
@@ -6,7 +6,7 @@
 		border-radius: 50%;
 	}
 }
-
-#intro {
-	height: 65vh;
+#home-text {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
 }

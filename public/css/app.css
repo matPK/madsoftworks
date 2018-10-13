@@ -10501,32 +10501,31 @@ body:before {
   background-size: auto;
 }
 
-section.block {
-  margin: 1.5em 0;
-  padding: 1.5em;
-}
-
 .nav-link {
-  font-size: 1.3rem;
-  margin-left: 2em;
-  color: #8ec55f !important;
+  font-size: 1.1rem;
+  margin-left: 1.5em;
+  color: white !important;
+  -webkit-transition: color 0.25s;
+  /* Safari */
+  transition: color 0.25s;
 }
 
 .nav-link:hover {
-  color: #fff !important;
+  color: #8ec55f !important;
 }
 
-.home-image {
+#home-logo {
   max-width: 300px;
   margin: auto;
 }
 
-.home-image img {
+#home-logo img {
   max-width: 100%;
   border-radius: 50%;
 }
 
-#intro {
-  height: 65vh;
+#home-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 

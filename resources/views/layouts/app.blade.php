@@ -5,7 +5,7 @@
     <div id="app">
         @include('partials._navbar')
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
 

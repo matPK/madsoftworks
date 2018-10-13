@@ -1,8 +1,10 @@
 .nav-link {
-	font-size: 1.3rem;
-	margin-left: 2em;
-	color: #8ec55f !important;
+	font-size: 1.1rem;
+	margin-left: 1.5em;
+	color: white !important;
+    -webkit-transition: color 0.25s; /* Safari */
+    transition: color 0.25s;
 }
 .nav-link:hover {
-	color: #fff !important;
+	color: #8ec55f !important;
 }
