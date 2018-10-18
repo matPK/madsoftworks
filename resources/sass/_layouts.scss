@@ -2,20 +2,18 @@
 html {
 	position: relative;
 	min-height: 100%;
+	min-width: $min-app-width;
 }
 
 body {
 	color: $default-font-color;
-	min-width: $min-app-width;	
 	margin-bottom: $footer-height;
-	height: 100%;
-	width: 100%;
 	background: url($background-image);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-body:before {
+#app {
 	position: absolute;
 	content: "";
 	background-color: rgba(30, 30, 30, 0.75);

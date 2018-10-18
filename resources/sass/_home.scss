@@ -1,3 +1,4 @@
+/*
 #home-logo {
 	max-width: 300px;
 	margin: auto;
@@ -6,7 +7,60 @@
 		border-radius: 50%;
 	}
 }
+*/
+
+section#home {
+
+	#company-logo {
+		padding-top: 3em;
+		padding-bottom: 1em;
+		text-align: center;
+		img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+	}
+
+	#greeting {
+		text-align: right;
+		width: fit-content;
+		margin: auto;
+
+		h1#introduction {
+
+			font-family: fantasy;
+			text-align: center;
+			color: whitesmoke;
+			
+			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+			@media screen and (min-width: $mobile-size + 1px) {
+				font-size: 8em;
+			}
+
+			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+			@media screen and (max-width: $mobile-size) {
+				font-size: 4em;
+			}
+
+			font-weight: 500;
+			text-shadow:
+				4px 4px 4px #000000,
+				-4px 4px 4px #000000,
+				4px -4px 4px #000000,
+				-4px -4px 4px #000000;
+		}
+
+		.know-more {
+			@media screen and (max-width: 378px) {
+				text-align: center;
+			}
+		}
+	}
+}
+/*
 #home-text {
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 }
+*/

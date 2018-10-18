@@ -1,11 +1,14 @@
-._nav-link {
-	font-size: 1.1rem;
-	margin-left: 1.5em;
-	color: white;
-    -webkit-transition: color 0.25s; /* Safari */
-    transition: color 0.25s;
-}
-._nav-link.active, ._nav-link:hover, ._nav-link:focus {
-	color: #8ec55f;
-	text-decoration: none;
+nav.navbar {
+	height: $navbar-height;
+	._nav-link {
+		font-size: 1.1rem;
+		margin-left: 1.5em;
+		color: white;
+	    -webkit-transition: color 0.25s; /* Safari */
+	    transition: color 0.25s;
+	}
+	._nav-link.active, ._nav-link:hover, ._nav-link:focus {
+		color: #8ec55f;
+		text-decoration: none;
+	}
 }

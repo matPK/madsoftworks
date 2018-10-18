@@ -1,20 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);html {
   position: relative;
   min-height: 100%;
+  min-width: 340px;
 }
 
 body {
   color: #DDD;
-  min-width: 340px;
   margin-bottom: 60px;
-  height: 100%;
-  width: 100%;
   background: url("/img/hipster-office-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-body:before {
+#app {
   position: absolute;
   content: "";
   background-color: rgba(30, 30, 30, 0.75);
@@ -33,7 +31,11 @@ body:before {
   background-size: auto;
 }
 
-._nav-link {
+nav.navbar {
+  height: 50px;
+}
+
+nav.navbar ._nav-link {
   font-size: 1.1rem;
   margin-left: 1.5em;
   color: white;
@@ -42,25 +44,76 @@ body:before {
   transition: color 0.25s;
 }
 
-._nav-link.active,
-._nav-link:hover,
-._nav-link:focus {
+nav.navbar ._nav-link.active,
+nav.navbar ._nav-link:hover,
+nav.navbar ._nav-link:focus {
   color: #8ec55f;
   text-decoration: none;
 }
 
+/*
 #home-logo {
-  max-width: 300px;
-  margin: auto;
+	max-width: 300px;
+	margin: auto;
+	img {
+		max-width: 100%;
+		border-radius: 50%;
+	}
+}
+*/
+
+section#home #company-logo {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
 }
 
-#home-logo img {
-  max-width: 100%;
+section#home #company-logo img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
-#home-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+section#home #greeting {
+  text-align: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
+
+section#home #greeting h1#introduction {
+  font-family: fantasy;
+  text-align: center;
+  color: whitesmoke;
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  font-weight: 500;
+  text-shadow: 4px 4px 4px #000000, -4px 4px 4px #000000, 4px -4px 4px #000000, -4px -4px 4px #000000;
+}
+
+@media screen and (min-width: 993px) {
+  section#home #greeting h1#introduction {
+    font-size: 8em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section#home #greeting h1#introduction {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  section#home #greeting .know-more {
+    text-align: center;
+  }
+}
+
+/*
+#home-text {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+*/
 
