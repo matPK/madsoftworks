@@ -12,8 +12,7 @@
 section#home {
 
 	#company-logo {
-		padding-top: 3em;
-		padding-bottom: 1em;
+		padding: 1.5em 0;
 		text-align: center;
 		img {
 			width: 200px;
@@ -35,7 +34,7 @@ section#home {
 			
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 			@media screen and (min-width: $mobile-size + 1px) {
-				font-size: 8em;
+				font-size: 7em;
 			}
 
 			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Mail;
+use Session;
+use App\Mail\Contact;
 
 class HomeController extends Controller
 {
@@ -53,7 +56,18 @@ class HomeController extends Controller
      */
     public function send_contact_message(Request $request)
     {
-        dd($request);
-        return view('contact');
+        $validated_message_data = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email',
+            'text' => 'required|min:10|max:2000',
+        ]);
+
+        extract($validated_message_data);
+
+        $envelope = new Contact($name, $email, $text);
+
+        Mail::to(config('mail.from.address'))->send($envelope);
+
+        return view('contact_thanks');
     }
 }

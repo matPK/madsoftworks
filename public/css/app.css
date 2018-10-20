@@ -63,8 +63,7 @@ nav.navbar ._nav-link:focus {
 */
 
 section#home #company-logo {
-  padding-top: 3em;
-  padding-bottom: 1em;
+  padding: 1.5em 0;
   text-align: center;
 }
 
@@ -94,7 +93,7 @@ section#home #greeting h1#introduction {
 
 @media screen and (min-width: 993px) {
   section#home #greeting h1#introduction {
-    font-size: 8em;
+    font-size: 7em;
   }
 }
 
