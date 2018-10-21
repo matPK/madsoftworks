@@ -1,3 +1,14 @@
+a {
+	color: white;
+
+    -webkit-transition: color 0.25s; /* Safari */
+    transition: color 0.25s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #8ec55f;
+}
 /*
 #home-logo {
 	max-width: 300px;
@@ -28,7 +39,6 @@ section#home {
 
 		h1#introduction {
 
-			font-family: fantasy;
 			text-align: center;
 			color: whitesmoke;
 			
@@ -42,12 +52,11 @@ section#home {
 				font-size: 3em;
 			}
 
-			font-weight: 500;
 			text-shadow:
-				4px 4px 4px #000000,
-				-4px 4px 4px #000000,
-				4px -4px 4px #000000,
-				-4px -4px 4px #000000;
+				2px 2px 2px #000000,
+				-2px 2px 2px #000000,
+				2px -2px 2px #000000,
+				-2px -2px 2px #000000;
 		}
 
 		.know-more {

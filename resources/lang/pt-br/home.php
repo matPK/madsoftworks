@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'web_artisan' => 'ARTESÃO WEB',
-	'know_more' => 'SAIBA MAIS',
+	'web_artisan' => 'Artesão Web',
+	'know_more' => 'SAIBA MAIS...',
 ];
