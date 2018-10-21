@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<p>{{ __('contact.thanks') }}</p>
+<div class="container mt-5">
+	<div class="dark-card">
+		<p class="lead">{{ __('contact.thanks') }}</p>
+	</div>
+</div>
 @endsection
