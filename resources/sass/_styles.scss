@@ -23,11 +23,10 @@ a:hover {
 section#home {
 
 	#company-logo {
-		padding: 1.5em 0;
 		text-align: center;
 		img {
-			width: 200px;
-			height: 200px;
+			width: 250px;
+			height: 250px;
 			border-radius: 50%;
 		}
 	}
@@ -44,7 +43,7 @@ section#home {
 			
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 			@media screen and (min-width: $mobile-size + 1px) {
-				font-size: 6em;
+				font-size: 5em;
 			}
 
 			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -53,10 +52,10 @@ section#home {
 			}
 
 			text-shadow:
-				2px 2px 2px #000000,
-				-2px 2px 2px #000000,
-				2px -2px 2px #000000,
-				-2px -2px 2px #000000;
+				1px 1px 1px #000000,
+				-1px 1px 1px #000000,
+				1px -1px 1px #000000,
+				-1px -1px 1px #000000;
 		}
 
 		.know-more {
@@ -103,7 +102,6 @@ section#home {
 			line-height: 1.6;
 			a {
 				font-size: 1.5em;
-				text-decoration: none;
 			}
 		}
 	}
