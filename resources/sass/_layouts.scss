@@ -1,24 +1,42 @@
 
 html {
+	/* STICKY FOOTER */
 	position: relative;
 	min-height: 100%;
-	min-width: $min-app-width;
-}
 
-body {
-	color: $default-font-color;
-	margin-bottom: $footer-height;
+	margin: 0;
+	padding: 0;
+	min-width: $min-app-width;
+
 	background: url($background-image);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#app {
+html:before {
 	position: absolute;
+	top: 0;
 	content: "";
 	background-color: rgba(30, 30, 30, 0.75);
 	width: 100%;
 	height: 100%;
+}
+
+body {
+	color: $default-font-color;
+	background-color: unset;
+
+	/* STICKY FOOTER */
+	margin-bottom: $footer-height;
+}
+
+#app {
+	main {
+		/* STICKY FOOTER */
+		padding-bottom: $footer-height;
+
+		position: relative;
+	}
 }
 
 .footer {
@@ -30,4 +48,10 @@ body {
 	background-color: #454545;
 	background-repeat: no-repeat;
 	background-size: auto;
+}
+
+.dark-card {
+	margin-top: 2em;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.75);
 }

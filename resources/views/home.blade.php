@@ -15,7 +15,7 @@
 				<div id="greeting">
 					<h1 id="introduction">{{ __('home.web_artisan') }}</h1>
 					<div class="know-more">
-						<a href="{{ route('about') }}" class="btn btn-lg btn-primary">{{ __('home.know_more') }}</a>
+						<a href="{{ route('about') }}" class="btn btn-primary">{{ __('home.know_more') }}</a>
 					</div>
 				</div>
 			</div>

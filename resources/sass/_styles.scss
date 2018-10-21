@@ -34,12 +34,12 @@ section#home {
 			
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 			@media screen and (min-width: $mobile-size + 1px) {
-				font-size: 7em;
+				font-size: 6em;
 			}
 
 			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 			@media screen and (max-width: $mobile-size) {
-				font-size: 4em;
+				font-size: 3em;
 			}
 
 			font-weight: 500;
@@ -57,6 +57,73 @@ section#home {
 		}
 	}
 }
+
+#contact {
+	form {
+		input, textarea {
+			color: whitesmoke;
+			background-color: darkslategray;
+			border: none;
+			border-radius: 0;
+		}
+		textarea {
+			resize: none;
+		}
+		.fa-facebook-square {
+			color: #3b5998;
+		}
+
+		.fa-linkedin {
+			color: #0077b5;
+		}
+
+		.fa-twitter-square {
+			color: #1da1f2;
+		}
+
+		.fa-github-square {
+			color: #24292e;
+		}
+
+		#social-links {
+			padding: 0 0.5em;
+			margin-left: auto;
+			border-radius: 5px;
+			width: fit-content;
+			height: 100%;
+			line-height: 1.6;
+			a {
+				font-size: 1.5em;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#about {
+	.technology-card {
+		width: 130px;
+		border-radius: 1em;
+		margin: auto;
+		a {
+			color: white;
+			text-decoration: none;
+			img {
+				border-radius: 50%;
+				width: 100%;
+				background-color: white;
+			}
+		}
+		transition: width 1s ease, font-size 1s ease;
+		//transition: font-size 1s ease;
+	}
+	.technology-card:hover {
+		width: 140px;
+		font-size: 110%;
+	}
+}
+
+
 /*
 #home-text {
 	background-color: rgba(0, 0, 0, 0.5);
